@@ -1,0 +1,4 @@
+{
+  "tests/test_base.py": true,
+  "tests/web_test/test_all.py": true
+}
