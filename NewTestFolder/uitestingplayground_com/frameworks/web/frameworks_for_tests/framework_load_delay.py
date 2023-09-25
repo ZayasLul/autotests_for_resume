@@ -17,5 +17,9 @@ class FrameworkLoadDelay(AnyPage):
         return self
 
     def click_button_appearing_after_delay(self):
-        # Нажимаем на кнопку
-        self.click_element(Locator.button_appearing_after_delay)
+        try:
+            # Нажимаем на кнопку
+            self.click_element(Locator.button_appearing_after_delay)
+            return True
+        except:
+            return False

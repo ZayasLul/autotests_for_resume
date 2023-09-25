@@ -37,8 +37,7 @@ class TestAll(WebBase):
         # Открываем страницу
         self.APP.framework_load_delay.open_page_load_delay()
         # Нажимаем на кнопку
-        self.APP.framework_load_delay.click_button_appearing_after_delay()
-        assert True
+        assert self.APP.framework_load_delay.click_button_appearing_after_delay()
 
     def test_ajax_data(self):
         # Открываем страницу
@@ -60,8 +59,7 @@ class TestAll(WebBase):
         # Открываем страницу
         self.APP.framework_click.open_page_click()
         # Нажимаем на кнопку
-        self.APP.framework_click.click_button_click()
-        assert True
+        assert self.APP.framework_click.click_button_click()
 
     def test_input_field(self):
         # Открываем страницу

@@ -17,5 +17,9 @@ class FrameworkClick(AnyPage):
         return self
 
     def click_button_click(self):
-        # Нажимаем на кнопку
-        self.click_element(Locator.button_click)
+        try:
+            # Нажимаем на кнопку
+            self.click_element(Locator.button_click)
+            return True
+        except:
+            return False
