@@ -1,0 +1,4 @@
+{
+  "test_all.py::TestAll": true,
+  "test_all.py": true
+}
