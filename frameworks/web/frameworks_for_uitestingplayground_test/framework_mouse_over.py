@@ -15,10 +15,7 @@ class FrameworkMouseOver(AnyPage):
 
     @allure.step('Открываем страницу sample_app')
     def open_page_sample_app(self):
-        # Прокручиваем до нужной ссылки
-        self.scroll_to_element(Locator.url_mouse_over)
-        # Нажимаем на ссылку
-        self.click_element(Locator.url_mouse_over)
+        self.open_page(Locator.url_mouse_over)
         return self
 
     @allure.step('Кликаем два раза на кнопку "Click me"')

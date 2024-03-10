@@ -11,10 +11,7 @@ class FrameworkDynamicId(AnyPage):
 
     @allure.step('Открываем страницу dynamic_id')
     def open_page_dynamic_id(self):
-        # Прокручиваем до нужной ссылки
-        self.scroll_to_element(Locator.url_dynamic_id)
-        # Нажимаем на ссылку
-        self.click_element(Locator.url_dynamic_id)
+        self.open_page(Locator.url_dynamic_id)
         return self
 
     @allure.step('ОНажимаем на кнопку с динамическим id')

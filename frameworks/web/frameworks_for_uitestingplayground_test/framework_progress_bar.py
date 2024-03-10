@@ -15,10 +15,7 @@ class FrameworkProgressBar(AnyPage):
 
     @allure.step('Открываем страницу progress_bar')
     def open_page_progress_bar(self):
-        # Прокручиваем до нужной ссылки
-        self.scroll_to_element(Locator.url_progress_bar)
-        # Нажимаем на ссылку
-        self.click_element(Locator.url_progress_bar)
+        self.open_page(Locator.url_progress_bar)
         return self
 
     @allure.step('Нажимаем на кнопку "start"')

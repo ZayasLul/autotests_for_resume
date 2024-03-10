@@ -12,10 +12,7 @@ class FrameworkScrollbars(AnyPage):
 
     @allure.step('Открываем страницу scrollbars')
     def open_page_scrollbars(self):
-        # Прокручиваем до нужной ссылки
-        self.scroll_to_element(Locator.url_scrollbars)
-        # Нажимаем на ссылку
-        self.click_element(Locator.url_scrollbars)
+        self.open_page(Locator.url_scrollbars)
         return self
 
     @allure.step('Нажимаем на кнопку')

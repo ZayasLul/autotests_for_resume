@@ -13,10 +13,7 @@ class FrameworkDynamicTable(AnyPage):
 
     @allure.step('Открываем страницу dynamic_table')
     def open_page_dynamic_table(self):
-        # Прокручиваем до нужной ссылки
-        self.scroll_to_element(Locator.url_dynamic_table)
-        # Нажимаем на ссылку
-        self.click_element(Locator.url_dynamic_table)
+        self.open_page(Locator.url_dynamic_table)
         return self
 
     @allure.step('Получаем CPU в таблице')

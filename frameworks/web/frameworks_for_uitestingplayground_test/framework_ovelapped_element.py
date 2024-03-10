@@ -12,10 +12,7 @@ class FrameworkOverlappedElement(AnyPage):
 
     @allure.step('Открываем страницу overlapped_element')
     def open_page_overlapped_element(self):
-        # Прокручиваем до нужной ссылки
-        self.scroll_to_element(Locator.url_overlapped_element)
-        # Нажимаем на ссылку
-        self.click_element(Locator.url_overlapped_element)
+        self.open_page(Locator.url_overlapped_element)
         return self
 
     @allure.step('Вводим имя')

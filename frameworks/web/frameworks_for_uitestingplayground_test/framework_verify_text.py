@@ -12,10 +12,7 @@ class FrameworkVerifyText(AnyPage):
 
     @allure.step('Открываем страницу verify_text')
     def open_page_verify_text(self):
-        # Прокручиваем до нужной ссылки
-        self.scroll_to_element(Locator.url_verify_text)
-        # Нажимаем на ссылку
-        self.click_element(Locator.url_verify_text)
+        self.open_page(Locator.url_verify_text)
         return self
 
     @allure.step('Находим и получаем текст')

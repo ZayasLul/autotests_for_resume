@@ -13,10 +13,7 @@ class FrameworkNoneBreakingSpace(AnyPage):
 
     @allure.step('Открываем страницу non_breaking_space')
     def open_page_non_breaking_space(self):
-        # Прокручиваем до нужной ссылки
-        self.scroll_to_element(Locator.url_non_breaking_space)
-        # Нажимаем на ссылку
-        self.click_element(Locator.url_non_breaking_space)
+        self.open_page(Locator.url_non_breaking_space)
         return self
 
     @allure.step('Нажимаем на кнопку')

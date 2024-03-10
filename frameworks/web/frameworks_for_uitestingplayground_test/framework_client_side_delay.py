@@ -13,10 +13,7 @@ class FrameworkClientSideDelay(AnyPage):
 
     @allure.step('Открываем страницу client_side_delay')
     def open_page_client_side_delay(self):
-        # Прокручиваем до нужной ссылки
-        self.scroll_to_element(Locator.url_client_side_delay)
-        # Нажимаем на ссылку
-        self.click_element(Locator.url_client_side_delay)
+        self.open_page(Locator.url_client_side_delay)
         return self
 
     @allure.step('Нажимаем на кнопку client_side_delay')

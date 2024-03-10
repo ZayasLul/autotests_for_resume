@@ -13,10 +13,7 @@ class FrameworkTextInput(AnyPage):
 
     @allure.step('Открываем страницу text_input')
     def open_page_text_input(self):
-        # Прокручиваем до нужной ссылки
-        self.scroll_to_element(Locator.url_text_input)
-        # Нажимаем на ссылку
-        self.click_element(Locator.url_text_input)
+        self.open_page(Locator.url_text_input)
         return self
 
     @allure.step('Вводим имя кнопки')

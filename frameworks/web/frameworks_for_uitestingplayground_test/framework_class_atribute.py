@@ -11,10 +11,7 @@ class FrameworkClassAttribute(AnyPage):
 
     @allure.step('Открываем страницу class_attribute')
     def open_page_class_attribute(self):
-        # Прокручиваем до нужной ссылки
-        self.scroll_to_element(Locator.url_class_attribute)
-        # Нажимаем на ссылку
-        self.click_element(Locator.url_class_attribute)
+        self.open_page(Locator.url_class_attribute)
         return self
 
     @allure.step('Нажимаем на синюю кнопку')

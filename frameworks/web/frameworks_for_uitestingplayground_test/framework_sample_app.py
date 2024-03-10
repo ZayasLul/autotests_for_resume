@@ -16,10 +16,7 @@ class FrameworkSampleApp(AnyPage):
 
     @allure.step('Открываем страницу sample_app')
     def open_page_sample_app(self):
-        # Прокручиваем до нужной ссылки
-        self.scroll_to_element(Locator.url_sample_app)
-        # Нажимаем на ссылку
-        self.click_element(Locator.url_sample_app)
+        self.open_page(Locator.url_sample_app)
         return self
 
     @allure.step('Заполняем поле "Имя пользователя"')

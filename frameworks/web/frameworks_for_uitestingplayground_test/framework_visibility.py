@@ -21,10 +21,7 @@ class FrameworkVisibility(AnyPage):
 
     @allure.step('Открываем страницу visibility')
     def open_page_visibility(self):
-        # Прокручиваем до нужной ссылки
-        self.scroll_to_element(Locator.url_visibility)
-        # Нажимаем на ссылку
-        self.click_element(Locator.url_visibility)
+        self.open_page(Locator.url_visibility)
         return self
 
     @allure.step('Нажимаем на кнопку "hide"')

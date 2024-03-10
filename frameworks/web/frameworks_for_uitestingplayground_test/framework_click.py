@@ -12,10 +12,7 @@ class FrameworkClick(AnyPage):
 
     @allure.step('Открываем страницу click')
     def open_page_click(self):
-        # Прокручиваем до нужной ссылки
-        self.scroll_to_element(Locator.url_click)
-        # Нажимаем на ссылку
-        self.click_element(Locator.url_click)
+        self.open_page(Locator.url_click)
         return self
 
     @allure.step('Нажимаем на кнопку @Click@')

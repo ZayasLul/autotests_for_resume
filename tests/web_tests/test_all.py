@@ -197,6 +197,7 @@ class TestAll(WebBase):
     @allure.title('Shadow_dom')
     @allure.severity('critical')
     def test_shadow_dom(self):
+        # Открываем страницу
         self.APP.framework_shadow_dom.open_page_shadow_dom()
         # Нажимаем на кнопку генерации GUID
         self.APP.framework_shadow_dom.click_shadow_button_generate()

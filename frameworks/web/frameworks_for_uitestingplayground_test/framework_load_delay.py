@@ -12,10 +12,7 @@ class FrameworkLoadDelay(AnyPage):
 
     @allure.step('Открываем страницу load_delay')
     def open_page_load_delay(self):
-        # Прокручиваем до нужной ссылки
-        self.scroll_to_element(Locator.url_load_delay)
-        # Нажимаем на ссылку
-        self.click_element(Locator.url_load_delay)
+        self.open_page(Locator.url_load_delay)
         return self
 
     @allure.step('Нажимаем на кнопку')

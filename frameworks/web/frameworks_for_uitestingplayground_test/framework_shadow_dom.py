@@ -16,10 +16,7 @@ class FrameworkShadowDom(AnyPage):
 
     @allure.step('Открываем страницу shadow_dom')
     def open_page_shadow_dom(self):
-        # Прокручиваем до нужной ссылки
-        self.scroll_to_element(Locator.url_shadow_dom)
-        # Нажимаем на ссылку
-        self.click_element(Locator.url_shadow_dom)
+        self.open_page(Locator.url_shadow_dom)
         return self
 
     @allure.step('Нажимаем на кнопку генерации GUID')

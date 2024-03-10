@@ -12,10 +12,7 @@ class FrameworkHiddenLayer(AnyPage):
 
     @allure.step('Открываем страницу hidden_layers')
     def open_page_hidden_layers(self):
-        # Прокручиваем до нужной ссылки
-        self.scroll_to_element(Locator.url_hidden_layers)
-        # Нажимаем на ссылку
-        self.click_element(Locator.url_hidden_layers)
+        self.open_page(Locator.url_hidden_layers)
         return self
 
     @allure.step('Нажимаем на кнопку')

@@ -13,10 +13,7 @@ class FrameworkAjaxData(AnyPage):
 
     @allure.step('Открываем страницу ajax_data')
     def open_page_ajax_data(self):
-        # Прокручиваем до нужной ссылки
-        self.scroll_to_element(Locator.url_ajax_data)
-        # Нажимаем на ссылку
-        self.click_element(Locator.url_ajax_data)
+        self.open_page(Locator.url_ajax_data)
         return self
 
     @allure.step('Нажимаем на кнопку отправки запроса ajax')
